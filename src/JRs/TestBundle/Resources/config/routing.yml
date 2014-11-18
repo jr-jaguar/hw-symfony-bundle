@@ -1,0 +1,3 @@
+jrs_hello:
+  pattern: /jrs-hello/{name}
+  defaults: { _controller: JRsTestBundle:JRsHello:index }
