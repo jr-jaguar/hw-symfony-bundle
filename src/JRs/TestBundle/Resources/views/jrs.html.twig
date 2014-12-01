@@ -7,7 +7,22 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
 <body>
-{% block body %}{% endblock %}
+    {% block header %}
+        <div id="header"><h1 style="text-align: center">Header</h1></div>
+    {% endblock %}
+    {% block leftsidebar %}
+        <div id="left-sidebar"><h1>Left Sidebar</h1></div>
+    {% endblock %}
+    {% block rightsidebar %}
+        <div id="right-sidebar"><h1>Right Sidebar</h1></div>
+    {% endblock %}
+    {% block content %}
+        <div id="content"><h1>Block Content</h1></div>
+    {% endblock %}
+    {% block footer %}
+        <div id="footer"><h1>Block Footer</h1></div>
+    {% endblock %}
+
 {% block javascripts %}{% endblock %}
 </body>
 </html>
