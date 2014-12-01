@@ -1,0 +1,24 @@
+JRsBlogBundle_homepage:
+    path:     /
+    defaults: { _controller: JRsBlogBundle:Page:index }
+    requirements:
+      _method: GET
+
+JRsBlogBundle_about:
+    path:     /about
+    defaults: { _controller: JRsBlogBundle:Page:about }
+    requirements:
+      _method: GET
+
+JRsBlogBundle_contact:
+    path:     /contact
+    defaults: { _controller: JRsBlogBundle:Page:contact }
+    requirements:
+      _method: GET|POST
+
+JRsBlogBundle_blog_show:
+    path:     /{id}
+    defaults: { _controller: JRsBlogBundle:Blog:show }
+    requirements:
+       _method: GET
+       id: \d+
